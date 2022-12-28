@@ -1,7 +1,15 @@
+import styles from "./Home.module.css"
+import imgHome from "../../img/savings.svg"
+import LinkButton from "../layout/LinkButton";
+
+
 export default function Home(){
     return(
-        <>
-            <p>Home</p>
-        </>
+        <section className={styles.home_container}>
+            <h1>Bem-vindo ao <span>Costs</span></h1>
+            <p>Comece a gerenciar seus projetos agora mesmo!</p>
+            <LinkButton to="/novoprojeto" text="Criar Projeto"/>
+            <img src={imgHome} alt="Costs"/>
+        </section>
     );
 }
